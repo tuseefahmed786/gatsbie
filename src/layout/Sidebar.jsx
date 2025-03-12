@@ -7,7 +7,7 @@ import groupIcon from '../assets/groupIcon.png'
 
 const SideBar = () => {
     return (
-        <aside className="px-3">
+        <aside className="px-3 w-[8%]">
             <div className='px-2 py-4 rounded-2xl h-full bg-[#F7F8F9]'>
                 <ul className="flex flex-col gap-5">
                     <Link to="/home/groups" className="block text-[#7E8695] hover:cursor-pointer text-sm">

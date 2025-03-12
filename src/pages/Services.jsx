@@ -11,7 +11,7 @@ const Services = () => {
     console.log(isModalOpen)
     return (
 
-        <div className='flex gap-2 w-[-webkit-fill-available]'>
+        <div className='flex gap-2 w-[90%]'>
             <div className='w-[30%] bg-[#F7F8F9] rounded-2xl overflow-y-scroll no-scrollbar'>
                 <h1 className="text-2xl text-[#2540AC] font-medium py-3 px-4">Services</h1>
                 <div className='px-3 py-2'>
@@ -21,7 +21,7 @@ const Services = () => {
             </div>
 
             {!selectedService && (
-                <div className='w-2/4 h-full flex flex-col gap-3 justify-center items-center'>
+                <div className='w-[70%] h-full flex flex-col gap-3 justify-center items-center'>
                     <img src={viewService} className='w-32' alt="viewService" />
                     <h1 className='text-xl'>Select a service to view</h1>
                 </div>
