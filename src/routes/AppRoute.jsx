@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
-import SideBar from '../layout/SideBar';
+import Sidebar from '../layout/Sidebar';
 import Navbar from '../layout/Navbar';
-import Home from '../pages/Home';
 import Services from '../pages/Services';
 import Groups from '../pages/Groups';
 import People from '../pages/People';
@@ -12,7 +11,7 @@ const AppRoute = () => {
     <BrowserRouter>
       <Navbar />
       <div className="flex h-[90vh]">
-        <SideBar />
+        <Sidebar />
           <Routes>
             <Route path="/" element={<Navigate to="/home/services" />} />
             <Route path="/home" element={<Navigate to="/home/services" />} />
