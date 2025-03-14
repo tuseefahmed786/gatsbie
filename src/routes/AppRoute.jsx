@@ -10,7 +10,7 @@ const AppRoute = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="flex h-[90vh]">
+      <div className="flex flex-col sm:flex-row gap-2 px-2 h-[90vh]">
         <Sidebar />
           <Routes>
             <Route path="/" element={<Navigate to="/home/services" />} />

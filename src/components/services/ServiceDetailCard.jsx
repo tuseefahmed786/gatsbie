@@ -1,5 +1,7 @@
 import React from "react";
 import arrow from '../../assets/whiteArrow.png'
+import { useDispatch } from "react-redux";
+import { clearSelectedService } from "../../redux/servicesSlice";
 const ServiceDetailCard = ({
   isModalOn,
   name,
@@ -11,9 +13,16 @@ const ServiceDetailCard = ({
   avatar,
   verifiedIcon,
 }) => {
+const dispatch = useDispatch()
+
   return (
-    <div className="bg-[#F7F8F9] rounded-2xl p-3 flex flex-col justify-between h-full ">
+    <div className="bg-[#F7F8F9] w-full rounded-2xl p-3 flex flex-col justify-between rounded-bl-none sm:rounded-bl-2xl sm:rounded-br-2xl rounded-br-none
+h-[90%] sm:h-full ">
       <div>
+
+        <div>
+          <button onClick={() => dispatch(clearSelectedService())}>Cancel</button>
+        </div>
         <div className="flex items-center gap-3">
           <img src={avatar} alt="avatar" className="w-10 h-10 rounded-full" />
           <div>
